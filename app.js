@@ -132,5 +132,4 @@ app.use("/auth", loginRouter);
 const port = 8080;
 app.listen(port, () => {
     console.log("Server started" );
-
 });

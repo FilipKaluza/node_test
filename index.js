@@ -10,7 +10,7 @@ app.set("view engine", "pug");
 
 // Routing
 app.get("/", (req, res) => {
-    res.send("Hello World")
+    res.send("Hello World update")
 });
 
 // Start server

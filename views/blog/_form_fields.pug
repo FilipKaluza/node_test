@@ -1,0 +1,16 @@
+
+div.form-group
+    label(for="title") Názov článku 
+    input(type="text" value=`${article.slug}` name="title" id="title" required).form-control
+
+div.form-group
+    label(for="description") popis 
+    textarea(type="text" name="description" id="description" required).form-control=`${article.description}` 
+
+div.form-group
+    label(for="markdown") Markdown 
+    textarea(type="markdown" name="markdown" id="markdown" required).form-control.markdown=`${article.markdown}` 
+
+a(href="/").btn.btn-secondary Cancel
+button(type="submit").btn.btn-primary Save
+

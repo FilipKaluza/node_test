@@ -1,0 +1,26 @@
+<! DOCTYPE html>
+
+html
+    head
+        title
+            block title
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        include _head
+
+        block link
+    body
+        header
+            include _nav
+        main
+            block main
+        footer
+            include _footer
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script src="/static/js/fb.js">
+        <!-- Your Chat Plugin code -->
+        <div class="fb-customerchat" attribution=setup_tool page_id="102289121541732" theme_color="#0A7CFF" logged_in_greeting="Dobrý deň, ako Vám môžeme pomôcť ?" logged_out_greeting="Dobrý deň, ako Vám môžeme pomôcť ?">
+        </div>
+

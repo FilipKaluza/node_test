@@ -1,0 +1,128 @@
+extends ../_main
+
+block prepend title
+    | Admin
+
+block main
+    section#profile.col-12.col-md-5
+        if results
+        h2.text-center.p-4 Profil používateľa #{results.username}
+        table.table.text-center.profiletable
+            tr
+                td Meno:
+                if results.name
+                    td #{results.name}
+                else
+                    td Neuvedený údaj
+            tr
+                td Priezvisko:
+                if results.surname
+                    td #{results.surname}
+                else
+                    td Neuvedený údaj
+            tr    
+                td E-mail:
+                if results.email
+                    td #{results.email}
+                else
+                    td Neuvedený údaj
+            tr    
+                td Adresa:
+                if results.adress
+                    td #{results.adress}
+                else
+                    td Neuvedený údaj
+            tr    
+                td Telefón:
+                if results.phone
+                    td #{results.phone}
+                else
+                    td Neuvedený údaj        
+        div#update
+            button#update.btn.btn-success.col-12.ms-auto.mb-2 Aktualizovať údaje
+        if results
+        form(action="/myaccount" method="POST")#updateAccForm
+            div.form-group
+                label( for="name" ) Name:
+                input(type="text" name="name" id="name" value=`${results.name}`).form-control
+            div.form-group
+                label( for="surname" ) Priezvisko:
+                input(type="text" name="surname" id="surname" value=`${results.surname}`).form-control
+            div.form-group
+                label( for="email" ) E-mail:
+                input(type="e-mail" name="email" id="email" value=`${results.email}`).form-control
+            div.form-group
+                label( for="adress" ) Adresa:
+                input(type="text" name="adress" id="adress" value=`${results.adress}`).form-control
+            div.form-group
+                label( for="phone" ) Telefón:
+                input(type="text" name="phone" id="phone" value=`${results.phone}`).form-control
+
+            button(type="submit").btn.btn-primary Aktualizovať údaje
+        
+    section.col-12.col-md-6
+        each user in users
+            h2.text-center Profil používateľa #{user.username} <div class="btn btn-success" id="accounts"> Rozbaliť informácie o užívateľovi </div>
+            table.table.text-center.profiletable#accountinfo
+            
+                tr
+                    td Meno:
+                    if user.name
+                        td #{user.name}
+                    else
+                        td Neuvedený údaj
+                tr
+                    td Priezvisko:
+                    if user.surname
+                        td #{user.surname}
+                    else
+                        td Neuvedený údaj
+                tr    
+                    td E-mail:
+                    if user.email
+                        td #{user.email}
+                    else
+                        td Neuvedený údaj
+                tr    
+                    td Adresa:
+                    if user.adress
+                        td #{user.adress}
+                    else
+                        td Neuvedený údaj
+                tr    
+                    td Telefón:
+                    if user.phone
+                        td #{user.phone}
+                    else
+                        td Neuvedený údaj        
+
+    section#blog
+    a(href="/blog/new" ).btn.btn-success.col-4.add_new_article Pridať nový článok
+    div.row
+
+        each article in articles
+
+            <div class="container col-12 col-md-5">
+                <div class="">
+                    <div class="case">
+                        <div class="row">
+                            <div class="col-12 col-md-6 d-flex">
+                                <img src=#{article.image} class="img-fluid blog_img" >
+                            </div>
+                            <div class="ol-12 col-md-6  d-flex">
+                                <div class="text w-100 pl-md-3">
+                                    h1.blog_title=article.title
+                                    p.blog_description=article.description
+                                    <div class="meta">
+                                        p=article.createdAt.toLocaleDateString()
+                                    </div>
+                                    a(href=`/blog/${article.slug}`).btn.btn_readmore Čítať viac
+                                    a(href=`/blog/edit/${article.id}`).btn.btn-info Edit
+                                    form(action=`/blog/${article.id}?_method=DELETE` method="POST").d-inline
+                                        button(type="submit").btn.btn-danger Delete 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>

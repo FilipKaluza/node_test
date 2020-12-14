@@ -1,0 +1,29 @@
+extends ../_main
+
+block prepend title
+    | Account
+
+block main
+    section#account
+        if results
+        h1 Aktualizovať údaje používateľa #{results.username}
+        form(action="/users" method="POST")
+            div.form-group
+                label( for="name" ) Name:
+                input(type="text" name="name" id="name" placeholder=`Meno`).form-control
+            div.form-group
+                label( for="name" ) Priezvisko:
+                input(type="text" name="surname" id="surname" placeholder=`Priezvisko`).form-control
+            div.form-group
+                label( for="name" ) E-mail:
+                input(type="e-mail" name="email" id="email" placeholder="E-mail").form-control
+            div.form-group
+                label( for="name" ) Adresa:
+                input(type="text" name="adress" id="adress" placeholder="Adresa").form-control
+            div.form-group
+                label( for="name" ) Telefón:
+                input(type="text" name="phone" id="phone" placeholder="Telefón").form-control
+
+            button(type="submit").btn.btn-primary Aktualizovať údaje
+
+    a(href=`/users/${results.username}` ) Prejsť na Váš profil

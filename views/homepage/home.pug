@@ -1,0 +1,83 @@
+extends ../_main
+
+block prepend title
+    | Home
+
+block main
+    section.container-fluid#homepage
+        h1.main_txt.m-auto Pečiem z lásky torty, koláče, zákusky...
+        
+        section.row.under_main_txt.m-auto
+            p.free_capacity.col.col-12.col-md-6.m-auto <img class="green_dot img-fluid" src="static/images/green_dot.svg"> Mám voľné kapacity Žilina / Orava 
+            a( href="/contact").cont_me.col.col-12.col-md-6.m-auto.animation_cont <p class="m-auto"> Kontaktujte ma <img class="" src="static/images/arrow_right.svg"> </p>
+        
+        div.introduce.m-auto
+            section.aboutme
+                h1.aboutme_header O mne
+                div.row.aboutme_text
+                    p.first_col_aboutme.col.col-12.col-md-4 Moje curkárske výrobky Vás neustále potešia svojou kvalitou. Neustále vymýšľame nové recepty pečiva, koláčov, tórt a dezertov. Pripravujeme torty na mieru pre každú príležitosť od narodenia Vašich potomkov až po okrúhlie výročia Vás a Vašich blízkych.
+                    p.second_col_aboutme.col.col-12.col-md-4 Naše výrobky chutia ako z domácej kuchne ! Predovšetkým používame domáce naturálne suroviny a suroviny miestnych výrobcov, aby naše produkty chutiny ako z domácej kuchyne :) 
+                    div.col.col-12.col-md-4
+                        div.row
+                            img(src="static/images/vertical_line.svg")
+                            div.col
+                                p.hundred_percent 100%
+                                p.hundered_percent_desc Naturálne a kvalitné suroviny 
+
+                        div.row
+                            img(src="static/images/vertical_line.svg")
+                            div.col
+                                p.hundred_percent 100%
+                                p.hundered_percent_desc Domáca kuchyňa
+
+
+            section.skills
+                h1.skills_main_header Ponúkame
+                div.row.skills_body
+                    div.container_skills.col-12.col-md-4
+                        img(src="static/images/mentoring.svg").img-fluid.skills_img
+                        h4.skills_header Mentoring
+                        p.skills_text Poradím Vám a pomôžem s výberom
+                    div.container_skills.col-12.col-md-4
+                        img(src="static/images/sir_vyber.svg").img-fluid.skills_img
+                        h4.skills_header Široký výber
+                        p.skills_text  koláčov, dezertov, zákuskov, toriet a mnoho ďalšieho
+                    div.container_skills.col-12.col-md-4
+                        img(src="static/images/doprava.svg").img-fluid.skills_img
+                        h4.skills_header Doprava
+                        p.skills_text  Žilina / Orava zdarma
+
+            section.galery
+                h1.galery_main_header
+              
+                div.row.col-12
+                    div.container.col-12.col-md-4.galery_item
+                        img(src="static/images/torty.svg").img-fluid
+                        h4.galery_header Torty
+                        p.show_all <a href="galery/torty"> Pozrieť všetko</a>
+                    div.container.col-12.col-md-4.galery_item
+                        img(src="static/images/kolace.svg").img-fluid
+                        h4.galery_header Koláče
+                        p.show_all <a href="/galery/kolace"> Pozrieť všetko</a>
+                    div.container.col-12.col-md-4.galery_item
+                        img(src="static/images/dezerty.svg").img-fluid
+                        h4.galery_header Dezerty
+                        p.show_all <a href="/galery/dezerty"> Pozrieť všetko</a>
+
+        section.Newsletter.m-auto
+            h1.newsletter_desc.col-12.col-md-7 Newsletter od <img class="newsl_pic img-fluid" src="static/images/picture_nwl_1.svg"> pre lepšie pečenie <img class="newsl_pic img-fluid" src="static/images/news_pic2.svg"> a mnoho noviniek pre vás <img class="newsl_pic img-fluid" src="static/images/news_pic.svg"> 
+                <form id="newsletter" class="col-12">
+                    <div class="form-group row newsletter-form-group">
+                        <input type="email" name="email" id="email" class="form-control news_email col-6 col-md-8" placeholder="Váš email" required />
+                        <button type="submit" class="btn btn-dark news_btn col-6 col-md-4"> Prihlásiť sa na odber noviniek
+                    </button>
+                    </div>
+                    
+                    <div id="postResultDiv" >
+                    </div>
+                </form>
+
+
+
+
+            

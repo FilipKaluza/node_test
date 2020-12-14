@@ -1,0 +1,37 @@
+extends ../_main
+
+block prepend title
+    | New Blog
+
+block main
+    section.blog
+        <link rel="stylesheet" type="text/css" href="/static/css/blog.css" >
+        form#newblogform.col-12.col-md-4.m-auto
+            h1.text-center Pridať nový blog
+            div.form-group
+            label(for="title").newpostheader Názov článku 
+            input(type="text" placeholder="Vložte názov článku" name="title" id="title" required).form-control
+
+            div.form-group.newpostheader
+                label(for="description") Krátky popis
+                textarea(type="text" placeholder="Vložte popis článku" name="description" id="description" required).form-control
+
+            div.form-group.newpostheader
+                label(for="markdown") Markdown 
+                textarea(type="markdown" placeholder="Vložte obsah článku" name="markdown" id="markdown" required).form-control.markdown
+
+            div.form-group.newpostheader
+                div.modal-dialog
+                    div.modal-content
+                        div.modal-header
+                            h2 Vložte titulný obrázok a uložte nový blog
+
+                        div.modal-body 
+                            form( method="POST" enctype="multipart/form-data" )#form-upload
+                                div.form-group
+                                    input( type="file" name="file").form-control
+                        input( type="submit" value="Pridať blog" ).btn.btn-success
+                        a(href="/").btn.btn-danger Zrušiť
+
+
+

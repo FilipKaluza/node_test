@@ -1,0 +1,19 @@
+extends ../_main
+
+block prepend title
+    | Login
+
+block main
+    section#login.col-12.col-md-5
+        h1.logregheader Zaregistrujte sa
+        form(action="/auth/register", method="POST").loginform
+            div.form-group
+                label( for="username") Zvoľte si používateľské meno:
+                input( type="text", name="username", id="username").form-control
+            div.form-group
+                label( for="password") Zvošte si svoje heslo:
+                input( type="password", name="password", id="password").form-control
+            button( type="submit" ).btn.btn-success.col-12 Register
+            
+        
+        a(href="/auth/login") Ak už máte účet prihláste sa tu

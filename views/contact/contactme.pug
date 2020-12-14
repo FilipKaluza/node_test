@@ -1,0 +1,28 @@
+extends ../_main
+
+block prepend title
+    | Kontakt
+
+block main
+    section.container.contact
+        div.col-12.col-md-8.m-auto
+            h1.contactMeHeader.text-center Kontaktujte ma
+            <form id="contactform" class="col-12 justify-content-md-center contactform">
+                <div class="form-group">
+                    <h3> Meno a priezvisko </h3>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Meno a Priezvisko" required />
+                </div>
+                <div class="form-group">
+                    <h3> Váš e-mail </h3>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="E-mail" required />
+                </div>
+                <div class="form-group">
+                    <h3> Vaša správa</h3>
+                    <input type="text" name="message" id="message" class="form-control" placeholder="Vaša správa" required />
+                </div>
+                <button type="submit" class="contact_btn"> Poslať správu
+                </button>
+                <div id="postResultDiv" >
+                </div>
+            </form>
+            <script src="static/js/contactajax.js"></script>

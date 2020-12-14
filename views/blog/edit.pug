@@ -1,0 +1,10 @@
+extends ../_main
+
+block prepend title
+    | Edit Block
+
+block main
+    section.blog
+        h1 Edit Article
+        form( action=`/blog/${article.id}?_method=PUT` method="POST")
+            include _form_fields

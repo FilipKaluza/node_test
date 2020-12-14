@@ -1,0 +1,328 @@
+
+
+
+@media screen and (min-width:501px){
+
+/* Blog */
+    .blog {
+        font-family: "Comfortaa";
+    }
+
+    .hero-wrap .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        opacity: .8;
+        background: #1DA1F2;
+        background: -moz-linear-gradient(45deg, #1DA1F2 0%, #fff 100%);
+        background: -webkit-linear-gradient(45deg, #1DA1F2 0%, #fff 100%);
+        background: -o-linear-gradient(45deg, #1DA1F2 0%, #fff 100%);
+        background: -ms-linear-gradient(45deg, #1DA1F2 0%, #fff 100%);
+        background: linear-gradient(45deg, #1DA1F2 0%, #fff 100%);
+    }
+
+    .hero-wrap {
+        background-image: url('/static/images/bg_1.jpeg'); 
+        height: 100%; 
+        background-position: 50% 0%;
+    }
+
+    .main_heading_blog {
+        font-size: 4vw;
+        color: white;
+        margin-left: 10vw;
+    }
+
+    .subheading_blog {
+        font-size: 2.5vw;
+        color: white;
+        margin-left: 10vw;
+    }
+
+    /* Animation arrow down */
+
+    .arrow_down {
+        width: 3vw;
+        height: 3vw;
+        padding: 0.5vw;
+        margin-left: 10vw;
+        animation: fadeIn ease 1s infinite;
+        -webkit-animation: fadeIn ease 1s infinite;
+        -moz-animation: fadeIn ease 1s infinite;
+        -o-animation: fadeIn ease 1s infinite;
+        -ms-animation: fadeIn ease 1s infinite;
+    }
+
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    /* posts */
+    .blog_post {
+        margin-top: 3vw;
+    }
+
+    .case {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .blog_title {
+        font-size: 3vw;
+    }
+
+    .blog_description {
+        font-size: 1vw;
+    }
+
+    .blog_img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        max-width: 1210px;
+    }
+
+    .btn_readmore {
+        background-color: #1DA1F2;
+        color: #fff;
+    }
+
+    .btn_success {
+        margin-top: 2vw;
+        margin-left: 30%;
+        background-color: #00ff15;
+        border-radius: 10px;
+    }
+
+    .btn_success:hover {
+        background-color: #1DA1F2
+    }
+
+    /* new post */
+    .close {
+        background-color: #000;
+    }
+
+    .newpostheader {
+        font-size: 1.5vw;
+    }
+
+    /* Show article (čítaj viac ) */
+    .showarticletitle {
+        font-size: vw;
+        width: 100%;
+        text-align: center;
+    }
+
+    .articleimg {
+        max-width: 1000px;
+    }
+
+    .container {
+        position: relative;
+        text-align: center;
+        color: #fff;
+        max-width: 1000px;
+      }
+      
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #000;
+        opacity: 0.6;
+        width: 70%;
+        padding: 30px;
+        border-radius: 30px 5px 30px 5px;
+
+    }
+
+    .btn_show_all_blogs {
+        width: 30%;
+        background-color: #1DA1F2;
+        color: #fff;
+    }
+
+    .btn_show_all_blogs:hover {
+        width: 30%;
+        background-color: rgb(16, 197, 0);
+    }
+
+    .markdown {
+        max-width: 1000px;
+        text-align: left;
+        margin: 30px auto;
+        color: #000;
+    }
+}
+
+@media screen and (max-width:500px){
+    .blog {
+        font-family: "Cofortaa";
+    }
+
+    main {
+        background-image:url('../images/bg_right.svg');
+        background-repeat:no-repeat;
+        background-position:top right;
+        background-position-y: 1000px;
+        background-size: 80vw;
+      }
+
+    .hero-wrap .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        opacity: .8;
+        background: #1DA1F2;
+        background: -moz-linear-gradient(45deg, #1DA1F2 0%, #fff 100%);
+        background: -webkit-linear-gradient(45deg, #1DA1F2 0%, #fff 100%);
+        background: -o-linear-gradient(45deg, #1DA1F2 0%, #fff 100%);
+        background: -ms-linear-gradient(45deg, #1DA1F2 0%, #fff 100%);
+        background: linear-gradient(45deg, #1DA1F2 0%, #fff 100%);
+    }
+
+
+    .main_heading_blog {
+        text-align: left;
+        font-size: 8.5vw;
+        color: #fff;
+    }
+
+    .subheading_blog {
+        text-align: left;
+        font-size: 7vw;
+        color: #fff;
+    }
+
+
+    /* Animation arrow down */
+
+    .arrow_down {
+        width: 30%;
+        margin-left: 35%;
+        height: 10vw;
+        padding: 0.5vw;
+        animation: fadeIn ease 1s infinite;
+        -webkit-animation: fadeIn ease 1s infinite;
+        -moz-animation: fadeIn ease 1s infinite;
+        -o-animation: fadeIn ease 1s infinite;
+        -ms-animation: fadeIn ease 1s infinite;
+    }
+
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    /* posts */
+
+    .case {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .blog_title {
+        font-size: 10vw;
+    }
+
+    .blog_description {
+        font-size: 6vw;
+    }
+
+    .blog_img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        max-width: 1210px;
+    }
+
+    .btn_readmore {
+        background-color: #1DA1F2;
+        color: #fff;
+    }
+
+    .btn_success {
+        margin-top: 2vw;
+        margin-left: 30%;
+        background-color: #00ff15;
+        border-radius: 10px;
+    }
+
+    .btn_success:hover {
+        background-color: #1DA1F2
+    }
+
+    /* new post */
+    .close {
+        background-color: #000;
+    }
+
+    .newpostheader {
+        font-size: 1.5vw;
+    }
+
+    /* Show article (čítaj viac ) */
+    .showarticletitle {
+        font-size: 5vw;
+        width: 100%;
+        text-align: center;
+    }
+
+    .articleimg {
+        max-width: 1000px;
+    }
+
+}
+
+

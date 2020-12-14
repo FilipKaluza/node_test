@@ -1,0 +1,15 @@
+extends ../_main
+
+block prepend title
+    | New Blog
+
+block main
+    
+    section.blog
+        <link rel="stylesheet" type="text/css" href="/static/css/blog.css" >
+        div.showarticle.col-12.col-md-8.mx-auto.pt-5
+            div.col-12.col-md-8.container
+                img(src=`${article.image}`).articleimg.col-12.col-md-6
+                h1.showarticletitle.centered= `${article.title}`
+                div.col-12.col-md-8.markdown!=`${article.sanitizedHtml}` 
+                a(href="/blog").btn.btn_show_all_blogs.col-12.p-3.m-3 Zobraziť všetky blogy

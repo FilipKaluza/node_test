@@ -129,7 +129,7 @@ app.use("/auth", loginRouter);
 
 
 // Start server
-const port = 8081;
+const port = process.env.port || 8080;
 app.listen(port, () => {
     console.log("Server started" );
 });

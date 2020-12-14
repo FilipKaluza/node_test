@@ -2,17 +2,15 @@
   "name": "cielo",
   "version": "1.0.0",
   "private": true,
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "watch": "nodemon",
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "Filip Kaluza",
   "license": "ISC",
   "devDependencies": {
-    "morgan": "^1.10.0",
-    "nodemon": "^2.0.6"
+    "morgan": "^1.10.0"
   },
   "dependencies": {
     "body-parser": "^1.19.0",

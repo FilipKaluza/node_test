@@ -6,7 +6,7 @@
             <img class="img-brand-top" src="/static/images/logo_top_nav.svg">
             <img class="logo" src="/static/images/logo.svg">
         </a>
-        <img class="mobile_icon justify-content-center" src="/static/images/phone.svg"> 
+        <a href="tel:+421915516520"><img class="mobile_icon justify-content-center" src="/static/images/phone.svg"> </a>
         //- Mobile button
         <button class="navbar-toggler" type="button" data-toggle="collapse" onclick="lockScroll();" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon" style="border-radius: 20px 15px 20px 15px" > <img src="/static/images/nav_btn_mob.svg" style="padding: 5px"> </span>
@@ -14,27 +14,27 @@
         //- Navigation
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto" id="nav-link">
-                <li class="nav_item m-auto p-3" >
+                <li class="nav_item m-auto" >
                     <a href="/" class="nav-link" >Homepage</span></a>
                 </li>
-                <li class="nav_item m-auto p-3">
+                <li class="nav_item m-auto">
                     <a href="/blog" class="nav-link">Blog</a>
                 </li>
-                <li class="nav-item m-auto p-3">
+                <li class="nav-item m-auto">
                     <a href="/galery" class="nav-link">Galéria</a>
                 </li>
-                <li class="nav-item m-auto p-3">
+                <li class="nav-item m-auto">
                     <a href="/contact" class="nav-link">Kontakt</a>
                 </li>
                 if loggedIn
                     
-                    li.nav-item.m-auto.p-3
+                    li.nav-item.m-auto
                         a(href="/myaccount").text-danger Môj profil
                         
-                    li.nav-item.m-auto.p-3
+                    li.nav-item.m-auto
                         a(href="/auth/logout").text-danger Odhlásiť sa
                 else 
-                     li.nav-item.m-auto.p-3
+                     li.nav-item.m-auto
                         a(href="/auth/login") Prihlásiť sa
             
                 <img class="white_line p-2" src="/static/images/ver_line_black.svg"> 

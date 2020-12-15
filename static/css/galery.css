@@ -298,8 +298,8 @@
   .close {
       color: #FFF !important;
       position: absolute;
-      top: 5vw;
-      right: 5vw;
+      top: 20px;
+      right: 20px;
       font-size: 50px;
       font-weight: bold;
   }
@@ -324,7 +324,7 @@
   .next {
       cursor: pointer;
       position: absolute;
-      top: 30%;
+      top: 150px;
       width: auto;
       padding: 16px;
       margin-top: -50px;
@@ -500,10 +500,10 @@
   }
 
   .logo_lightbox {
-    margin-left: 7vw;
-    top: 10vw;
-    height: 20vw;
-    width: 20vw;
+    margin-left: 20px;
+    top: 20px;
+    height: 100px;
+    width: 100px;
   }
 }
 

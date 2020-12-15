@@ -8,6 +8,11 @@
         font-family: "Comfortaa";
     }
 
+    .blog_header {
+        margin: 300px 30px 0 30px;
+    }
+
+
     .hero-wrap .overlay {
         position: absolute;
         top: 0;
@@ -187,6 +192,10 @@
         font-family: "Cofortaa";
     }
 
+    .blog_header {
+        margin: 100px 15px 0 15px;
+    }
+
     main {
         background-image:url('../images/bg_right.svg');
         background-repeat:no-repeat;
@@ -195,33 +204,16 @@
         background-size: 80vw;
       }
 
-    .hero-wrap .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        content: '';
-        opacity: .8;
-        background: #1DA1F2;
-        background: -moz-linear-gradient(45deg, #1DA1F2 0%, #fff 100%);
-        background: -webkit-linear-gradient(45deg, #1DA1F2 0%, #fff 100%);
-        background: -o-linear-gradient(45deg, #1DA1F2 0%, #fff 100%);
-        background: -ms-linear-gradient(45deg, #1DA1F2 0%, #fff 100%);
-        background: linear-gradient(45deg, #1DA1F2 0%, #fff 100%);
-    }
-
-
     .main_heading_blog {
         text-align: left;
-        font-size: 8.5vw;
-        color: #fff;
+        font-size: 7vw;
+        color: #000;
     }
 
     .subheading_blog {
         text-align: left;
-        font-size: 7vw;
-        color: #fff;
+        font-size: 4vw;
+        color: #000;
     }
 
 
@@ -271,11 +263,13 @@
     }
 
     .blog_title {
-        font-size: 10vw;
+        font-size: 6vw;
+        font-weight: 600;
+        padding: 10px 0;
     }
 
     .blog_description {
-        font-size: 6vw;
+        font-size: 4vw;
     }
 
     .blog_img {
@@ -313,14 +307,54 @@
     }
 
     /* Show article (čítaj viac ) */
+
     .showarticletitle {
-        font-size: 5vw;
+        font-size: 14px;
         width: 100%;
         text-align: center;
     }
 
     .articleimg {
         max-width: 1000px;
+        padding-top: 50px;
+    }
+
+    .container {
+        position: relative;
+        text-align: center;
+        color: #fff;
+        max-width: 1000px;
+      }
+      
+    .centered {
+        position: absolute;
+        top: 151px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #000;
+        opacity: 0.6;
+        width: 70%;
+        padding: 10px;
+        border-radius: 30px 5px 30px 5px;
+
+    }
+
+    .btn_show_all_blogs {
+        width: 80%;
+        background-color: #1DA1F2;
+        color: #fff;
+    }
+
+    .btn_show_all_blogs:hover {
+        width: 30%;
+        background-color: rgb(16, 197, 0);
+    }
+
+    .markdown {
+        max-width: 1000px;
+        text-align: left;
+        margin: 30px auto;
+        color: #000;
     }
 
 }

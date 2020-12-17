@@ -31,10 +31,17 @@ const cookieParser = require("cookie-parser");
 const app = express();
 
 
-// init db //"mongodb://mongo:27017/express-mongo", (server) 
+// connect DB server 
+
 mongoose.connect("mongodb://mongo:27017/express-mongo", {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
 .then(() => console.log('MongoDB Connected'))
-.catch(err => console.log(err));;
+.catch(err => console.log(err));
+
+// connect DB development
+/*
+mongoose.connect("mongodb://localhost:27017/", {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
+.then(() => console.log('MongoDB Connected'))
+.catch(err => console.log(err));*/
 
 
 // DB

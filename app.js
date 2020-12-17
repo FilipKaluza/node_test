@@ -31,8 +31,8 @@ const cookieParser = require("cookie-parser");
 const app = express();
 
 
-// init db
-mongoose.connect("mongodb://mongo:27017/express-mongo", {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
+// init db //"mongodb://mongo:27017/express-mongo", (server) 
+mongoose.connect("mongodb://localhost:27017/", {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
 .then(() => console.log('MongoDB Connected'))
 .catch(err => console.log(err));;
 

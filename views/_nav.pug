@@ -14,30 +14,32 @@
         //- Navigation
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto" id="nav-link">
-                <li class="nav_item m-auto" >
+                <li class="nav_item" >
                     <a href="/" class="nav-link" >Homepage</span></a>
                 </li>
-                <li class="nav_item m-auto">
+                <li class="nav_item">
                     <a href="/blog" class="nav-link">Blog</a>
                 </li>
-                <li class="nav-item m-auto">
+                <li class="nav_item">
                     <a href="/galery" class="nav-link">Galéria</a>
                 </li>
-                <li class="nav-item m-auto">
+                <li class="nav_item">
                     <a href="/contact" class="nav-link">Kontakt</a>
                 </li>
                 if loggedIn
                     
-                    li.nav-item.m-auto
-                        a(href="/myaccount").text-danger Môj profil
+                    li.nav_item.m-auto
+                        a(href="/myaccount").text-danger.nav-link  Môj profil
                         
-                    li.nav-item.m-auto
-                        a(href="/auth/logout").text-danger Odhlásiť sa
+                    li.nav_item.m-auto
+                        a(href="/auth/logout").text-danger.nav-link  Odhlásiť sa
                 else 
-                     li.nav-item.m-auto
-                        a(href="/auth/login") Prihlásiť sa
-            
-                <img class="white_line p-2" src="/static/images/ver_line_black.svg"> 
+                     li.nav_item.m-auto
+                        a(href="/auth/login").nav-link Prihlásiť sa
+
+                <li class="nav_item white_line >
+                    <img class="p-2" src="/static/images/ver_line_black.svg"> 
+                </li>
                 <a href="https://www.instagram.com/cielopasteles/" class="m-auto p-2"><img src="/static/images/instagram.svg"></a>
                 <a href="https://www.facebook.com/Neofici%C3%A1lna-str%C3%A1nka-Cielo-102289121541732" class="m-auto p-2 last_nav_item"><img src="/static/images/fb.svg"></a>
                 

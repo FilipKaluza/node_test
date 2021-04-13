@@ -27,7 +27,7 @@ router.post("/signup", (req, res) => {
         url: "https://us2.api.mailchimp.com/3.0/lists/281e30a0f7",
         method: "POST",
         headers: {
-            Authorization: "auth e938ea47616a0531fd7d37fb38138aa4-us2"
+            Authorization: "auth e938ea47616a0531fd7d37fb38138aa4-us2" //just for example, it's not valid key
         },
         body: postData
     }
